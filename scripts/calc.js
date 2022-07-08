@@ -1,5 +1,5 @@
 
-const textarea = document.querySelector('#numpad-textarea')
+const textarea = document.querySelector('.numpad-textarea')
 textarea.value = '0';
 
 const enterNumber = (number) => {
