@@ -105,17 +105,7 @@ const multiplyNumbers = () => {
     textarea.value = textarea.value + '*'
 }//кнопка %
 
-// const ProcentNum = () => {
-//     // if (!textarea.value || textarea.value === '0')    return
-//     // if (!textarea.value || textarea.value[textarea.value.length - 1] === '%')    return
-//     // checkLastSymbol(textarea)
-//     // Totals(textarea)
-//     if (!textarea.value || textarea.value === '0')    return
-//     if (!textarea.value || textarea.value[textarea.value.length - 1] === '*')    return
-//     checkLastSymbol(textarea)
-//     Totals(textarea)
-//     textarea.value = textarea.value + '*'
-// }
+
 
 function Percentage() {
     if (!textarea.value || textarea.value[textarea.value.length - 1] === '%')    return
@@ -123,12 +113,6 @@ function Percentage() {
     Totals(textarea)
     textarea.value = textarea.value + '%'
 }
-// const  percentNum = () => {
-//     if (!textarea.value || textarea.value[textarea.value.length - 1] === '-')    return
-//     checkLastSymbol(textarea)
-//     Totals(textarea)
-//     textarea.value = textarea.value + '%'
-// }
 
 
 
@@ -152,31 +136,5 @@ const rootNumbers = () => {
 
 
 
-
-
-// {
-//     if (!textarea.value)    return
-//     // if (!textarea.value || textarea.value[textarea.value.length - 1] === '+')    return
-//     if (textarea.value.includes('+')) {
-//         const numbersArr = textarea.value.split('+');
-//         textarea.value = parseInt(numbersArr[0]) + parseInt(numbersArr[1])
-//
-//         //  total = parseInt(numbersArr[0]) + parseInt(numbersArr[1]);
-//         // textarea.value = total;
-//         textarea.value = textarea.value + '+'
-//
-//     }
-//     // textarea.value = textarea.value + '+'
-// }
-
-
-
-
-
-// const buttons = document.querySelectorAll ('.number')
-//
-// for (let i = 0; i < buttons.length; i++) {
-//     buttons[i].addEventListener('click', () => enterNumber(buttons[].innerText))
-// }
 
 
