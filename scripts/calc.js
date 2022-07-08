@@ -3,10 +3,8 @@ const textarea = document.querySelector('.numpad-textarea')
 textarea.value = '0';
 
 const enterNumber = (number) => {
-    // if (number === 0 && !textarea.value)    return;
     if (textarea.value === '0' && number === 0)    textarea.value = 0;
     else if (textarea.value === '0' && number != 0) textarea.value = number;
-    // else if (textarea.value[textarea.value.length - 1] === '+' || ) сократить на 1
     else (textarea.value = textarea.value + number);
 }
 
@@ -63,7 +61,6 @@ const Totals = () => {
 
 //кнопка Стереть
 const cancelNumber = () => {
-    // if (number === 0 && !textarea.value)    return;
     textarea.value = '0';
 }
 
@@ -73,7 +70,6 @@ const cancelNumber = () => {
 const sumNumbers = () => {
     //предотвращение нажатия двух плюсов
     if (!textarea.value || textarea.value[textarea.value.length - 1] === '+')    return
-    // checkLastSymbol(textarea)
     Totals(textarea)
     textarea.value = textarea.value + '+'
 }
@@ -82,7 +78,6 @@ const sumNumbers = () => {
 const divideNumbers = () => {
     //предотвращение нажатия двух плюсов
     if (!textarea.value || textarea.value[textarea.value.length - 1] === '/')    return
-    // checkLastSymbol(textarea)
     Totals(textarea)
     textarea.value = textarea.value + '/'
 }
@@ -91,7 +86,6 @@ const divideNumbers = () => {
 //кнопка -
 const minusNumbers = () => {
     if (!textarea.value || textarea.value[textarea.value.length - 1] === '-')    return
-    // checkLastSymbol(textarea)
     Totals(textarea)
     textarea.value = textarea.value + '-'
 }
@@ -100,7 +94,6 @@ const minusNumbers = () => {
 const multiplyNumbers = () => {
     if (!textarea.value || textarea.value === '0')    return
     if (!textarea.value || textarea.value[textarea.value.length - 1] === '*')    return
-    // checkLastSymbol(textarea)
     Totals(textarea)
     textarea.value = textarea.value + '*'
 }//кнопка %
@@ -109,7 +102,6 @@ const multiplyNumbers = () => {
 
 function Percentage() {
     if (!textarea.value || textarea.value[textarea.value.length - 1] === '%')    return
-    // checkLastSymbol(textarea)
     Totals(textarea)
     textarea.value = textarea.value + '%'
 }
@@ -120,7 +112,6 @@ function Percentage() {
 const expNumbers = () => {
     if (!textarea.value || textarea.value === '0')    return
     if (!textarea.value || textarea.value[textarea.value.length - 1] === '^')    return
-    // checkLastSymbol(textarea)
     Totals(textarea)
     textarea.value = textarea.value + '^'
 }
@@ -128,8 +119,6 @@ const expNumbers = () => {
 //извлечение корня
 const rootNumbers = () => {
     if (!textarea.value || textarea.value === '0')    return
-    // if (!textarea.value || textarea.value[textarea.value.length - 1] === '√')    return
-    // checkLastSymbol(textarea)
     Totals(textarea)
     textarea.value = Math.sqrt(textarea.value)
 }
